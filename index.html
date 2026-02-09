@@ -8,22 +8,25 @@
 <body>
 
 <div class="container">
-  <div id="heart">
-    <!-- Piezas rojas -->
-    <div class="piece red"></div>
-    <div class="piece red"></div>
-    <div class="piece red"></div>
-    <div class="piece red"></div>
-    <div class="piece red"></div>
-    <div class="piece red"></div>
-    <div class="piece red"></div>
-    <div class="piece red"></div>
 
-    <!-- Pieza faltante -->
-    <div class="piece white">
-      <span>Eres la parte<br>que le faltaba<br>a mi vida</span>
-    </div>
-  </div>
+<svg viewBox="0 0 300 260" class="heart">
+  <!-- piezas rojas -->
+  <path class="piece red" d="M50 60 Q30 20 80 20 Q120 20 150 60 Q180 20 220 20 Q270 20 250 60 Q250 120 150 200 Q50 120 50 60 Z"/>
+
+  <!-- líneas rompecabezas -->
+  <path class="lines" d="M150 60 V150 M90 100 H210 M120 130 Q150 160 180 130" />
+
+  <!-- pieza blanca faltante -->
+  <path class="piece white"
+        d="M130 90
+           q20 -20 40 0
+           q20 20 0 40
+           q-20 20 -40 0
+           q-20 -20 0 -40 z"/>
+</svg>
+
+<p class="text">Eres la pieza que faltaba en mi vida</p>
+
 </div>
 
 <script src="script.js"></script>
